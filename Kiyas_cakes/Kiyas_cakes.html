@@ -2,15 +2,16 @@
 <html lang="en">
     <head>
         <title>Kiya's Cakes</title>
-        <link rel="shortcut icon" type="image/png" href="thumb/cakeicon.png"/>
+        <link rel="shortcut icon" type="image/png" href="thumb/cakeicon.png">
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <link rel="stylesheet" type="text/css" href="css/one_page.css">
         <meta charset="utf-8">
     </head>
     <body> 
         <!--Nav-->
-        <div>
-            <div>
-                <ul>
-                    <link rel="stylesheet" type="text/css" href="css/file.css">
+        <div class="wrap">
+            <div class="menu-container">
+                <ul class="menu">
                     <a href="#home" id="link"><li>Home</li></a>
                     <a href="#product"><li>Products</li></a>
                     <a href="#contact"><li>Contact</li></a>
@@ -21,9 +22,13 @@
 
         <!--Home-->
         <div id="home">
-            <div>
-                <span>Kiya's Cakes</span>
+            <div class="container">
+                <div class="text-center"></div>
+                <span class="head-main">Kiya's Cakes</span>
+                    <div class="p-container">
                 <p>Kiya's Cakes are homemade cakes that are made for events. All of our cakes can be custom made to fit your needs.</p> <!--This paragraph will need to be cleaned up.-->
+                    </div>
+                </div>
             </div>
         </div>
         <!--End Home-->
@@ -32,57 +37,56 @@
         <section>
             <div id="product">
                 <h1>Cakes</h1>
-                <div>
+                <div class="flex-container">
 
                     <!--Photo 1-->
-                    <div>
-                        <div>
+                    <div class="photo-container">
+                        <div class="photo">
                             <img src="thumb/cake1.jpg" width="250" height="300" alt="strawberry shortcake">
-                            <div>
+                            <div class="photo-overlay">
                                 <h3>Click to view the ingredients!</h3>
                                 <p>Filler cake ingredients</p><!--Return to this line later & add ingredients-->
                             </div>
                         </div>
                     </div>
-                    <!--Photo 1-->
+                    <!--Photo 1 END-->
 
                     <!--Photo 2-->
-                    <div>
-                        <div>
+                    <div class="photo-container">
+                        <div class="photo">
                             <img src="thumb/cake2.jpg" alt="Nanaimo bar cake">
-                            <div>
+                            <div class="photo-overlay">
                                 <h3>Click to view the ingredients!</h3>
                                 <p>Filler cake ingredients</p><!--Return to this line later & add ingredients-->
                             </div>
                         </div>
                     </div>
-                    <!--Photo 2-->
+                    <!--Photo 2 END-->
 
                     <!--Photo 3-->
-                    <div>
-                        <div>
+                    <div class="photo-container">
+                        <div class="photo">
                             <img src="thumb/cake3.jpg" alt="Carrot cake">
-                            <div>
+                            <div class="photo-overlay">
                                 <h3>Click to view the ingredients!</h3>
                                 <p>Filler cake ingredients</p><!--Return to this line later & add ingredients-->
                             </div>
                         </div>
                     </div>
-                    <!--Photo 3-->
+                    <!--Photo 3 End-->
 
                     <!--Photo 4-->
-                    <div>
-                        <div>
+                    <div class="photo-container">
+                        <div class="photo">
                             <img src="thumb/cake4.jpg" alt="Black forest cake">
-                            <div>
+                            <div class="photo-overlay">
                                 <h3>Click to view the ingredients!</h3>
                                 <p>Filler cake ingredients</p><!--Return to this line later & add ingredients-->
                             </div>
                         </div>
                     </div>
-                    <!--Photo 4-->
-                    <p>Here is a video showing how to bake!</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QJ7IThUaXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--Photo 4 END-->
+                    
                 </div>
 
             </div>
@@ -90,17 +94,18 @@
         <!--End Product-->
 <!--Checkout section will be added here in the future.-->
         <!--Contact-->
-        <section>
-            <div id="contact">
-                <div>
-                    <h1>Contact</h1>
-                    <div>
-                        <h2><span>If you are interested in these cake or baking</span>
-                        <br />Contact us today!</h2>
-                        <p>
+        <section id="contact">
+            <div class="container">
+                <div class="heading-padding">
+                    <h1 class="heading-padding">Contact</h1>
+                    <div class="reservation">
+                        <h2>
+                            <span>If you are interested in these cakes or baking</span>
+                            <br />Contact us today!</h2>
+                        <p class="rsvp-text">
                            Please provide us with your basic contact information. 
                         </p>
-                        <div>
+                        <div class="form-rsvp">
                             <form action="" method="post">
                                 <input class="contact" type="text" value="First Name">
                                 <input class="contact" type="text" value="Last Name">
@@ -109,7 +114,7 @@
                                 <div class="form-spacer">
                                     <label class="terms">Terms and Conditions</label>
                                 </div>
-                                <div>
+                                <div class="submit">
                                     <input type="submit" value="Order"
                                 </div>
                             </form>
@@ -121,7 +126,7 @@
         <!--End Contact-->
 
         <!--Footer-->
-        <div>
+        <div id="footer">
             www.KiyasCakes.com &nbsp;| &nbsp; &copy; 2022
         </div>
         <!--End Footer-->
